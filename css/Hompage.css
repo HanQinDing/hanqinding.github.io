@@ -1,0 +1,667 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Roboto&display=swap');
+*{
+
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  
+}
+body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3.5px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #AAAAAA;
+}
+
+
+
+.leftsection{
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  bottom:0px;
+  left: 30px;
+  z-index: 4;
+  opacity: 0;
+}
+.leftsection::after {
+  height: var(--afterheight, 0vh);
+  background-color: #606079;
+  color: #3b3b4d;
+  margin-top: 20%;
+  display: block;
+  transition: 1s;
+  content: "";
+  float: left;
+  left: -50px;
+  width: 5%;
+  bottom: 0;
+}
+.svg--icon {
+  max-height: 50px;
+  max-width: 50px;
+  display: block;
+  margin: 0 auto;
+  height: 95%;
+  width: 95%;
+}  
+.share {
+  margin: -100% 0 0 0;
+  opacity: inherit;
+  fill: #49495a;
+  transition: 1s;
+  height: auto;
+  float: left;
+  width: 90%;
+}  
+.Github:hover{
+transform: translateY(-5px);
+fill: #6e5494;
+
+} 
+.Instagram:hover{
+  transform: translateY(-5px);
+  fill: url(#rg);
+  }
+.Linkedin:hover{
+  transform: translateY(-5px);
+  fill: #0e76a8;
+}
+.Codepen:hover{
+  transform: translateY(-5px);
+  fill: black;
+}
+
+
+.mainsection{
+  margin: 0 0 0 10vw;
+  width: 90vw;
+  float: left;
+}
+.Introduction{
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+
+
+.Hello,.SE,.resume{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  margin-left: 40px;
+  width: 100%;
+  float: left;
+}
+.Hello{
+  height: fit-content;
+  margin-top: 25vh;
+}
+.Hello p{
+  letter-spacing: -0.6vh;
+  font-size: 10vmin;
+  color: #313131;
+  font-weight: 750;
+  line-height: 1;
+  margin: 0;
+}
+.SE{
+  letter-spacing: 0.5vh;
+  position: relative;
+  color: #868686;
+  font-weight: 400;
+  margin-top: 10px;
+  transition: 1s;
+  font-size: 3vh;
+  opacity: 0;
+}
+.resume{
+  margin-top: 30px;
+  transition: 1s;
+  opacity: 0;  
+}
+.resume a{
+  padding:  8.712px 31.68px  8.712px 31.68px;
+  box-shadow: 0px 1px 4px 0px #bb90ff;  
+  border:2px solid rgb(91, 23, 199);
+  background-color: white;
+  color: rgb(91, 23, 199);
+  letter-spacing: 0.1375vh;
+  border-radius: 4px;
+  transition: 330ms;
+  margin-left: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+.Resumedownload{
+  color: inherit;
+}
+.resume a:hover {
+  background: rgb(91, 23, 199);
+  transform: translateY(-8px);
+  color: white;
+}
+
+
+.About{
+  position: relative;
+  margin-bottom: 8vh;
+  margin-top: 20vmin;
+  height: 140vh;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .4s ease-in-out;
+  -moz-transition: opacity .4s ease-in-out;
+  -ms-transition: opacity .4s ease-in-out;
+  -o-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+}
+.Skillslogo {  
+  position: absolute;
+  width: 100vw;
+  margin-left: -10vw;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-name: Skillslogo;
+  animation-duration: 3s;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+.Skillslogo img{
+  position: absolute;
+  z-index: 1;
+}
+@keyframes Skillslogo{
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+.AboutContainer{
+  height: 100vh;
+  width: auto;
+  position: sticky;
+  top: 30vh;
+}
+
+.Aboutback{
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+}
+.Aboutme{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.5s ease-out;
+  color:#ebebeb;
+  letter-spacing: 0.7vmin;
+  white-space: nowrap;
+  margin:0 0 0 -20vmax;
+  font-weight: 650;
+  font-size: 21vmin;
+  float: left;
+
+}
+.Aboutfront{
+  position: absolute;
+  margin-top: 14vmin;
+  margin-left: 8vw;
+  float: left;
+  z-index: 3;
+  width: 65%;
+}
+.aboutmedesc{
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.05vmin;
+  color: #313131;
+  font-size: 2.6vmin;
+  line-height: 4.5vmin;
+  font-weight: 450;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+
+}
+
+
+
+.Work{
+  height:var(--workheight, 380vh);
+  margin-top: -10vh;
+}
+.Work_Right,.Work_Left{
+  height:var(--workheight, 380vh);
+  box-sizing: border-box;
+  float: left;
+  width: 45%;
+  opacity: 1;
+  z-index: 2;
+}
+.Work_Right{
+  width: 55%;
+}
+.Work_Description{
+  letter-spacing: -0.3vh;
+  box-sizing: border-box;
+  position: sticky;
+  transition: 1s;
+  height: 100vh;
+  float: left;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  top: 40px;
+}
+.AOS,.Fostership{
+  position: relative;
+  height: 160vh;
+}
+.AOS img, .Fostership img{
+  transition: transform 0.2s ease-out;  
+}
+
+#AOS1{
+  position: absolute;
+  width:75vmin;
+  height: auto;
+  top: 82%;
+  left: 3%;
+}
+#AOS2{
+  position: absolute;
+  width:65vmin;
+  height: auto;
+  top: 80%;
+  right:4% ;
+}
+#AOS3{
+  position: absolute;
+  width:60vmin;
+  height: auto;
+  top: 83%;
+  left: 10%;
+}
+#AOS4{
+  position: absolute;
+  width:50vmin;
+  height: auto;
+  top: 91%;
+  right: 8%;
+}
+
+#F1{
+  position: absolute;
+  width:30vmin;
+  height: auto;
+  top: 99%;
+  left:15%;
+}
+#F2{
+  position: absolute;
+  width:35vmin;
+  height: auto;
+  top: 88%;
+  right:10% ;
+}
+#F3{
+  position: absolute;
+  width:39vmin;
+  height: auto;
+  top: 84%;
+  left: 3%;
+}
+#F5{
+  position: absolute;
+  width:25vmin;
+  height: auto;
+  top: 99%;
+  right: 12%;
+}
+
+.ProjTitle,.ProjType,.ProjDesc,.ProjExtra,.Work_Description h2{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  float: left;
+  height: fit-content;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -ms-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+.ProjExtra{
+  display: inline-block;
+  text-align: center;
+  margin-top: 5vh;
+}
+.ProjExtra p{
+  display: inline-block;
+}
+.ProjTitle p{
+  font-family: 'Raleway',sans-serif;
+  margin: 28% 0 0 0;
+  color: #313131;
+  font-weight: 700;
+  font-size:8.8vh;
+  position: relative;
+}
+.ProjType p{
+  font-family: 'Raleway',sans-serif;
+  letter-spacing: -0.05vw;
+  margin-bottom: 1%;
+  color: #313131;
+  font-weight: 500;
+  margin-top: 5%;  
+  font-size: 4vh;
+  float: left;
+  position: relative;
+}
+.ProjDesc p{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.05vw;
+  font-weight: 300;
+  line-height: 4vh;
+  color:#313131;
+  margin-top: 0%;
+  font-size: 3vh;
+  position: relative;
+}
+.Projxtra{
+  width: 80px;
+  height: 80px;
+  transition: 250ms;
+  fill: #313131;
+}
+.Projxtra:hover{
+  transform: translateY(-10px);
+  fill: #6e5494;
+}
+
+
+
+.Contact{
+  transition: opacity 0.6s ease-in-out;
+  margin-right: 10vw;
+  margin-top: -30vh;
+  width:  80vw;
+  height: 65vh;
+  float: left;
+  opacity: 0;
+  align-items: center;
+  text-align: center;
+}
+.ContactHeader{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: -0.3vh;
+  color: #313131;
+  font-weight: 700;
+  font-size: 10vh;
+  height: fit-content;
+  margin: 0;
+}
+.ContactDes{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.3vh;
+  font-size: 2.5vh;
+  color: #868686;
+  line-height: 1.4;
+  font-weight: 400;
+  width: 60%;
+  margin: 10px auto 10px auto;
+  
+}
+
+.Chat{
+  margin-top: 50px;
+  width: fit-content;
+  height:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Submit{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1.1vh 4vh 1.4vh 4vh;
+  border-color: rgb(91, 23, 199);
+  box-shadow: 0px 1px 4px 0px #bb90ff;
+  background-color: white;
+  color: rgb(91, 23, 199);
+  border:2px solid rgb(91, 23, 199);
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: 300ms;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+
+}
+.Submit:hover{
+  background: rgb(91, 23, 199);
+  color: white;
+  transform: translateY(-8px);
+}
+
+
+.build{
+  font-family: 'Raleway',sans-serif;
+  color: #8b8686;;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 30px;
+  letter-spacing: 0.1vh;
+}
+
+@media screen and (max-width: 768px) {
+  .mainsection{
+    width: 100vw;
+    margin: 0;
+  }
+
+
+  /*About Section*/
+  .Aboutfront{
+    margin-left:100px;
+    margin-top: 160px;
+  }
+
+  .Aboutme{
+    font-size: 150px;
+    margin-top: 50px;
+  }
+
+  .aboutmedesc{
+    line-height: 32px;
+    font-size: 17px;
+  }
+
+
+  /*Work Section*/
+  .Work_Right{
+    width: 100%;
+    position: absolute;
+  }
+  .Work_Left{
+    width: 100%;
+  }
+  .Work_Description{
+    top: 0px;
+  }
+  .ProjTitle, .ProjType, .ProjDesc, .ProjExtra{
+    margin-left: 20px;
+  }
+  .ProjTitle p{
+    margin: 50px 0 0 0;
+    font-size: 11vmin;
+  }
+  .ProjDesc{
+    width: 90%;
+  }
+  .ProjType p{
+    font-size: 5vmin;
+    margin: 3vmin 0 0 0;
+  }
+  .ProjDesc p{
+    font-size: 3.3vmin;
+  }
+  .ProjExtra{
+    margin-left: 0;
+  }
+  .Projxtra{
+    width: 12vmin;
+    height: 12vmin;
+ 
+  }
+   /*Contact Section*/
+  .Contact{
+    margin-top: 0;
+    height: 55vh;
+    width: 100%;
+  }
+  .Contact p{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ContactHeader{
+    font-size: calc(55px + 0.5vmin);
+  }
+  .ContactDes{
+    width: 70%;
+    font-size: calc(10px + 1vmin);
+  }
+
+
+  /*leftsection*/
+  .leftsection{
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+  }
+  .leftsection::after {
+    height:0;
+    margin: 0;
+    content: "";
+    left: 0;
+    width: 0%;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+   /*Introduction Section*/
+  .Hello p{
+    letter-spacing: -0.5vh;
+    font-size: 11.5vmin;
+  }
+  .SE{
+    font-size: 4.5vmin;
+  }
+  .resume{
+    margin-top: 25px;
+  }
+  .AboutContainer{
+    top: 18vh;
+  }
+  .Aboutme {
+    font-size: 120px;
+    margin: 75px 0 0 -25vmax;
+  }
+  .Aboutfront{
+    width: 65%;
+  }
+  .aboutmedesc{
+    font-size: 15px;
+  }
+  
+   /*Work Section*/
+  #AOS1{
+    width: 88vmin;
+    left: 1%;
+    top: 82%;
+  }
+  #AOS2{
+    width: 74vmin;
+    right: 4%;
+    top: 75%;
+  }
+  #AOS3{
+    width: 65vmin;
+    left: 3%;
+    top: 75%;
+  }
+  #AOS4{
+    width: 50vmin;
+    right: 8%;
+    top: 80%;
+  }
+  #F1{
+    width: 38vmin;
+    left: 10%;
+    top: 90%;
+  }
+  #F2{
+    width: 43vmin;
+    right: 4%;
+    top: 88%;;
+  }
+  #F3{
+    width: 45vmin;
+    left: 3%;
+    top: 84%;
+  }
+  #F5{
+    width: 34vmin;
+    right: 7%;
+    top: 90%;
+  }
+  .ProjDesc p{
+    line-height: unset;
+  }
+
+  /*Contact Section*/
+  .Contact{
+    height: 50vh;
+    margin-top: -30vh;
+  }
+  .ContactHeader{
+    font-size: 11vmin;
+  }
+  .ContactDes{
+    font-size: 3.6vmin;
+  }
+
+  
+  /*leftsection*/
+   .svg--icon{
+    max-width: 43px;
+  }
+}
