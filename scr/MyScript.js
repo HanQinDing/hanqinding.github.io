@@ -33,8 +33,8 @@ function PageAnimation() {
     setTimeout(PageAnimation, txtspeed);
   }
   else{
+    Hellotxt.innerHTML = ("Width: "+ window.innerWidth.toString() + " Height: "+ window.innerHeight.toString())
     SE.style.transform = `translate(0px,0vh)`;
-    Hellotxt 
     SE.style.opacity = "1";
     resume.style.transform = `translate(0px,0vh)`;
     resume.style.opacity = "1";
