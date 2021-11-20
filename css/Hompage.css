@@ -714,6 +714,7 @@ fill: #6e5494;
   .Hello p{
     letter-spacing: -0.5vh;
     font-size: 11.5vmin;
+    color: rgb(91, 23, 199);
   }
   .SE{
     font-size: 4.5vmin;
@@ -865,10 +866,12 @@ fill: #6e5494;
     margin-left: auto;
     margin-right: auto;
     float: unset;
+
   }
  .Hello p{
   letter-spacing: -0.7vmin;
   font-size: 11.5vmin;
+  color: red;
  }
  .SE{
    font-size: 4.5vmin;
