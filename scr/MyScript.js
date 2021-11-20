@@ -34,6 +34,7 @@ function PageAnimation() {
   }
   else{
     SE.style.transform = `translate(0px,0vh)`;
+    Hellotxt 
     SE.style.opacity = "1";
     resume.style.transform = `translate(0px,0vh)`;
     resume.style.opacity = "1";
