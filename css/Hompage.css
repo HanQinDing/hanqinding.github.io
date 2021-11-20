@@ -8,13 +8,11 @@
   
 }
 body{
-  scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: overlay;
   margin: 0 !important;
   padding: 0 !important;
 }
-
 
 ::-webkit-scrollbar {
   width: 14px;
@@ -26,7 +24,6 @@ body{
   border-radius: 9999px;
   background-color: #AAAAAA;
 }
-
 
 
 .leftsection{
@@ -138,7 +135,7 @@ fill: #6e5494;
 }
 .resume a{
   padding:  8.712px 31.68px  8.712px 31.68px;
-  box-shadow: 0px 1px 4px 0px #bb90ff;  
+  /*box-shadow: 0px 1px 4px 0px #bb90ff;  */
   border:2px solid rgb(91, 23, 199);
   background-color: white;
   color: rgb(91, 23, 199);
@@ -197,7 +194,77 @@ fill: #6e5494;
   65%  { transform: translate(0, 15px); }
   to   { transform: translate(0, -0px); }    
 }
+.SELogo, .DESLogo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+#Android,#Unity,#Idle,#Xcode,#Blender,#UX,#PS,#VS{
+  height:auto; 
+  opacity: 0.5;
+}
+#Android{
+  transform: rotate(10deg);
+  width: 19vmax;
+  min-width: 220px;
+  left: -100px;
+  top:-280px;
+}
+#Unity{
+  transform: rotate(0deg);
+  width: 17vmax;
+  min-width: 200px;
+  left: 10%;
+  margin-top: 47vmin;
+}
+#Idle{
+  transform: rotate(10deg);
+  width: 15vmax;
+  min-width: 200px;
+  right: 8%;
+  margin-top: -21vmin;
+}
+#Xcode{
+  transform: rotate(350deg);
+  width: 18vmax;
+  min-width: 240px;
+  right: -5%;
+  margin-top:42.5vh;
+}
 
+#Blender{
+  transform: rotate(10deg);
+  width: 256px;
+  min-width: 220px;
+  right: 137px;
+  bottom:-430px;
+}
+#UX{
+  transform: rotate(355deg);
+  width: 237px;
+  min-width: 200px;
+  left: -50px;
+  bottom:-592px;
+}
+#PS{
+  transform: rotate(5deg);
+  width:239px;
+  min-width: 200px;
+  right: -60px;
+  top:-278px;
+}
+#VS{
+  transform: rotate(350deg);
+  width: 219px;
+  min-width: 240px;
+  left: 100px;
+  top:-339px;
+}
 .AboutContainer{
   height: 100vh;
   width: auto;
@@ -249,11 +316,11 @@ fill: #6e5494;
 
 
 .Work{
-  height:var(--workheight, 380vh);
+  height: 400vh;
   margin-top: -10vh;
 }
 .Work_Right,.Work_Left{
-  height:var(--workheight, 380vh);
+  height:400vh;
   box-sizing: border-box;
   float: left;
   width: 45%;
@@ -262,6 +329,7 @@ fill: #6e5494;
 }
 .Work_Right{
   width: 55%;
+  margin-top: 30vh;
 }
 .Work_Description{
   letter-spacing: -0.3vh;
@@ -287,6 +355,7 @@ fill: #6e5494;
   position: absolute;
   width:75vmin;
   height: auto;
+  z-index: 4;
   top: 82%;
   left: 3%;
 }
@@ -294,6 +363,7 @@ fill: #6e5494;
   position: absolute;
   width:65vmin;
   height: auto;
+  z-index: 3;
   top: 80%;
   right:4% ;
 }
@@ -301,6 +371,7 @@ fill: #6e5494;
   position: absolute;
   width:60vmin;
   height: auto;
+  z-index: 2;
   top: 83%;
   left: 10%;
 }
@@ -310,12 +381,14 @@ fill: #6e5494;
   height: auto;
   top: 91%;
   right: 8%;
+  z-index: 1;
 }
 
 #F1{
   position: absolute;
   width:30vmin;
   height: auto;
+  z-index: 2;
   top: 99%;
   left:15%;
 }
@@ -323,6 +396,7 @@ fill: #6e5494;
   position: absolute;
   width:35vmin;
   height: auto;
+  z-index: 3;
   top: 88%;
   right:10% ;
 }
@@ -330,6 +404,7 @@ fill: #6e5494;
   position: absolute;
   width:39vmin;
   height: auto;
+  z-index: 4;
   top: 84%;
   left: 3%;
 }
@@ -337,6 +412,7 @@ fill: #6e5494;
   position: absolute;
   width:25vmin;
   height: auto;
+  z-index: 1;
   top: 99%;
   right: 12%;
 }
@@ -433,7 +509,6 @@ fill: #6e5494;
   margin: 10px auto 10px auto;
   
 }
-
 .Chat{
   margin-top: 50px;
   width: fit-content;
@@ -441,12 +516,11 @@ fill: #6e5494;
   margin-left: auto;
   margin-right: auto;
 }
-
-.Submit{
+.Chat a{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 1.1vh 4vh 1.4vh 4vh;
   border-color: rgb(91, 23, 199);
-  box-shadow: 0px 1px 4px 0px #bb90ff;
+  /*box-shadow: 0px 1px 4px 0px #bb90ff;*/
   background-color: white;
   color: rgb(91, 23, 199);
   border:2px solid rgb(91, 23, 199);
@@ -459,7 +533,7 @@ fill: #6e5494;
   float: left;
 
 }
-.Submit:hover{
+.Chat a:hover{
   background: rgb(91, 23, 199);
   color: white;
   transform: translateY(-8px);
@@ -487,6 +561,63 @@ fill: #6e5494;
     margin-left:100px;
     margin-top: 160px;
   }
+  #Android{
+    transform: rotate(10deg);
+    width: 39vmin;
+    min-width: 263px;
+    left: -50px;
+    top:-280px;
+  }
+  #Unity{
+    transform: rotate(0deg);
+    width:  22vmax;
+    min-width: 261px;
+    left: -10%;
+    margin-top: 21vmin;
+  }
+  #Idle{
+    transform: rotate(10deg);
+    width: 15vmax;
+    min-width: 218px;
+    right: -20%;
+    margin-top: -21vmin;
+  }
+  #Xcode{
+    transform: rotate(350deg);
+    width: 18vmax;
+    min-width: 265px;
+    right: -15%;
+    margin-top:42.5vh;
+  }
+  
+  #Blender{
+    transform: rotate(10deg);
+    width: 39vmin;
+    min-width: 263px;
+    right: -134px;
+    bottom:-651px;
+  }
+  #UX{
+    transform: rotate(355deg);
+    width: 22vmax;
+    min-width: 261px;
+    left: -10%;
+    bottom:-5vmin;
+  }
+  #PS{
+    transform: rotate(5deg);
+    width:15vmax;
+    min-width: 218px;
+    right: -20%;
+    top:3vmin;
+  }
+  #VS{
+    transform: rotate(350deg);
+    width: 18vmax;
+    min-width: 265px;
+    left: -6%;
+    top:33.5vh;
+  }
 
   .Aboutme{
     font-size: 150px;
@@ -502,7 +633,9 @@ fill: #6e5494;
   /*Work Section*/
   .Work_Right{
     width: 100%;
+    height: 350vh;
     position: absolute;
+    
   }
   .Work_Left{
     width: 100%;
@@ -601,8 +734,67 @@ fill: #6e5494;
   .aboutmedesc{
     font-size: 15px;
   }
+  #Android{
+    transform: rotate(10deg);
+    width: 39vmin;
+    min-width:239px;
+    left: -76px;
+    top:-280px;
+  }
+  #Unity{
+    transform: rotate(0deg);
+    width: 22vmax;
+    min-width: 229px;
+    left: -15%;
+    margin-top: 21vmin;
+  }
+  #Idle{
+    transform: rotate(10deg);
+    width: 15vmax;
+    min-width: 196px;
+    right: -27%;
+    margin-top: -21vmin;
+  }
+  #Xcode{
+    transform: rotate(350deg);
+    width: 18vmax;
+    min-width: 242px;
+    right: -30%;
+    margin-top:43.5vh;
+  }
   
+  #Blender{
+    transform: rotate(10deg);
+    width: 39vmin;
+    min-width: 263px;
+    right: -134px;
+    bottom:-651px;
+  }
+  #UX{
+    transform: rotate(355deg);
+    width: 22vmax;
+    min-width: 211px;
+    left: -10%;
+    bottom:5vmin;
+  }
+  #PS{
+    transform: rotate(5deg);
+    width: 15vmax;
+    min-width: 186px;
+    right: -25%;
+    top:3vmin;
+  }
+  #VS{
+    transform: rotate(350deg);
+    width: 18vmax;
+    min-width: 209px;
+    left: -6%;
+    top:33.5vh;
+  }
    /*Work Section*/
+   .Work_Right{
+    height: 320vh;
+   }
   #AOS1{
     width: 88vmin;
     left: 1%;
@@ -664,4 +856,68 @@ fill: #6e5494;
    .svg--icon{
     max-width: 43px;
   }
+}
+
+@media screen and (max-width: 320px) {
+  /*Introduction Section*/
+  .Hello{
+    width: 83vw;
+    margin-left: auto;
+    margin-right: auto;
+    float: unset;
+  }
+ .Hello p{
+  letter-spacing: -0.7vmin;
+  font-size: 11.5vmin;
+ }
+ .SE{
+   font-size: 4.5vmin;
+   margin-left: 8.5vw;
+ }
+ .resume{
+   margin-top: 20px;
+ }
+ .resume a{
+  padding: 2vmin 5vmin 2vmin 5vmin;
+  margin-left: 0;
+  font-size: 3.7vmin;
+ }
+
+ .Aboutfront{
+  margin-left: 17vw;
+  margin-right: auto;
+ }
+ .aboutmedesc{
+   line-height: 28px;
+ }
+   /*Work Section*/
+   .Work_Left{
+    height: 380vh;
+   }
+ /*Contact Section*/
+ .Contact{
+   height: 50vh;
+   margin-top: -30vh;
+ }
+ .ContactHeader{
+   font-size: 12vmin;
+   letter-spacing: -0.5vmin;
+ }
+ .ContactDes{
+   font-size: 3.6vmin;
+   width: 92%;
+   letter-spacing: 0.54vmin;
+ }
+ .Chat{
+   margin-top: 30px;
+ }
+ .Chat a{
+  padding: 2vmin 5vmin 2vmin 5vmin;
+  font-size: 3.7vmin;
+ }
+ 
+ /*leftsection*/
+  .svg--icon{
+   max-width: 43px;
+ }
 }
