@@ -7,11 +7,14 @@
   box-sizing: border-box;
   
 }
+
 body{
   overflow-x: hidden;
   overflow-y: overlay;
   margin: 0 !important;
   padding: 0 !important;
+  position: relative;
+  width: 1005;
 }
 
 ::-webkit-scrollbar {
@@ -87,7 +90,7 @@ fill: #6e5494;
 
 .mainsection{
   margin: 0 0 0 10vw;
-  width: 90vw;
+  width: 90%;
   float: left;
 }
 .Introduction{
@@ -112,7 +115,8 @@ fill: #6e5494;
 }
 .Hello p{
   letter-spacing: -0.6vh;
-  font-size: 10vmin;
+  font-size: clamp(10vmin, 10vmin, 75px);
+  /*12vw*/
   color: #313131;
   font-weight: 750;
   line-height: 1;
@@ -215,8 +219,8 @@ fill: #6e5494;
   left: -100px;
   top:-280px;
 }
-#Unity{
-  transform: rotate(0deg);
+#Xcode{
+  transform: rotate(350deg);
   width: 17vmax;
   min-width: 200px;
   left: 10%;
@@ -229,8 +233,8 @@ fill: #6e5494;
   right: 8%;
   margin-top: -21vmin;
 }
-#Xcode{
-  transform: rotate(350deg);
+#Unity{
+  transform: rotate(10deg);
   width: 18vmax;
   min-width: 240px;
   right: -5%;
@@ -551,8 +555,18 @@ fill: #6e5494;
 
 @media screen and (max-width: 768px) {
   .mainsection{
-    width: 100vw;
+    width: 100%;
     margin: 0;
+  }
+  .Introduction{
+    height: 90vh;
+  }
+  .Hello,.SE,.resume{
+    margin-left: 0;
+    float: unset;
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
   }
 
 
@@ -568,8 +582,8 @@ fill: #6e5494;
     left: -50px;
     top:-280px;
   }
-  #Unity{
-    transform: rotate(0deg);
+  #Xcode{
+
     width:  22vmax;
     min-width: 261px;
     left: -10%;
@@ -582,8 +596,7 @@ fill: #6e5494;
     right: -20%;
     margin-top: -21vmin;
   }
-  #Xcode{
-    transform: rotate(350deg);
+  #Unity{
     width: 18vmax;
     min-width: 265px;
     right: -15%;
@@ -621,14 +634,22 @@ fill: #6e5494;
 
   .Aboutme{
     font-size: 150px;
-    margin-top: 50px;
+    margin: 55px 0 0 -25vmax;
   }
 
   .aboutmedesc{
     line-height: 32px;
     font-size: 17px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
-
+  .Aboutfront{
+    width: 100%;
+    margin: 0;
+    margin-top: 160px;
+  }
+ 
 
   /*Work Section*/
   .Work_Right{
@@ -645,6 +666,9 @@ fill: #6e5494;
   }
   .ProjTitle, .ProjType, .ProjDesc, .ProjExtra{
     margin-left: 20px;
+  }
+  .ProjTitle, .ProjType, .ProjDesc, .Work_Description h2 {
+    width:fit-content;
   }
   .ProjTitle p{
     margin: 50px 0 0 0;
@@ -711,29 +735,28 @@ fill: #6e5494;
 
 @media screen and (max-width: 480px) {
    /*Introduction Section*/
-  .Hello p{
-    letter-spacing: -0.5vh;
-    font-size: 11.5vmin;
-    color: rgb(91, 23, 199);
-  }
   .SE{
     font-size: 4.5vmin;
   }
   .resume{
-    margin-top: 25px;
+    margin-top: 7vmin;
+    
+  }
+  .resume a{
+    padding: 1.5vmin 5vmin 1.5vmin 5vmin;
+    font-size: clamp(12px,4vmin,16px);
   }
   .AboutContainer{
     top: 18vh;
   }
   .Aboutme {
-    font-size: 120px;
-    margin: 75px 0 0 -25vmax;
-  }
-  .Aboutfront{
-    width: 65%;
+    font-size: 95px;
+    margin: 95px 0 0 -20vmax;
+    letter-spacing: -0.7vmin;
   }
   .aboutmedesc{
     font-size: 15px;
+    width: 80%;
   }
   #Android{
     transform: rotate(10deg);
@@ -742,8 +765,8 @@ fill: #6e5494;
     left: -76px;
     top:-280px;
   }
-  #Unity{
-    transform: rotate(0deg);
+  #Xcode{
+
     width: 22vmax;
     min-width: 229px;
     left: -15%;
@@ -756,8 +779,8 @@ fill: #6e5494;
     right: -27%;
     margin-top: -21vmin;
   }
-  #Xcode{
-    transform: rotate(350deg);
+  #Unity{
+
     width: 18vmax;
     min-width: 242px;
     right: -30%;
@@ -798,7 +821,7 @@ fill: #6e5494;
    }
   #AOS1{
     width: 88vmin;
-    left: 1%;
+    left: 2%;
     top: 82%;
   }
   #AOS2{
@@ -860,67 +883,39 @@ fill: #6e5494;
 }
 
 @media screen and (max-width: 320px) {
-  /*Introduction Section*/
-  .Hello{
-    width: 83vw;
-    margin-left: auto;
-    margin-right: auto;
-    float: unset;
 
+
+  /*Work Section*/
+  #Blender {
+    min-width: 263px;
+    right: -130px;
+    bottom: -651px;
   }
- .Hello p{
-  letter-spacing: -0.7vmin;
-  font-size: 11.5vmin;
-  color: red;
- }
- .SE{
-   font-size: 4.5vmin;
-   margin-left: 8.5vw;
- }
- .resume{
-   margin-top: 20px;
- }
- .resume a{
-  padding: 2vmin 5vmin 2vmin 5vmin;
-  margin-left: 0;
-  font-size: 3.7vmin;
- }
-
- .Aboutfront{
-  margin-left: 17vw;
-  margin-right: auto;
- }
- .aboutmedesc{
-   line-height: 28px;
- }
-   /*Work Section*/
-   .Work_Left{
-    height: 380vh;
-   }
- /*Contact Section*/
- .Contact{
-   height: 50vh;
-   margin-top: -30vh;
- }
- .ContactHeader{
-   font-size: 12vmin;
-   letter-spacing: -0.5vmin;
- }
- .ContactDes{
-   font-size: 3.6vmin;
-   width: 92%;
-   letter-spacing: 0.54vmin;
- }
- .Chat{
-   margin-top: 30px;
- }
- .Chat a{
-  padding: 2vmin 5vmin 2vmin 5vmin;
-  font-size: 3.7vmin;
- }
- 
- /*leftsection*/
-  .svg--icon{
-   max-width: 43px;
- }
+  #UX {
+    min-width: 208px;
+    left: -20%;
+    bottom: 2vmin;
+  }
+  #PS {
+    min-width: 186px;
+    right: -35%;
+    top: 3vmin;
+  }
+  #VS {
+    min-width: 209px;
+    left: -15%;
+    top: 33.5vh;
+  }
+  #Android {
+      left: -76px;
+  }
+  #Unity{
+    right: -35%;
+  }
+  #Idle {
+    right: -35%;
+  }
+  #Xcode {
+    left: -20%;
+  }
 }
