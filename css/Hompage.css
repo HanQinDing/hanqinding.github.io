@@ -211,6 +211,7 @@ fill: #6e5494;
 #Android,#Unity,#Idle,#Xcode,#Blender,#UX,#PS,#VS{
   height:auto; 
   opacity: 0.5;
+  overflow-x:hidden;
 }
 #Android{
   transform: rotate(10deg);
@@ -265,9 +266,9 @@ fill: #6e5494;
 #VS{
   transform: rotate(350deg);
   width: 219px;
-  min-width: 240px;
-  left: 100px;
-  top:-339px;
+  min-width: 246px;
+  left: 10%;
+  top: -350px;
 }
 .AboutContainer{
   height: 100vh;
@@ -292,7 +293,7 @@ fill: #6e5494;
   font-weight: 650;
   font-size: 21vmin;
   float: left;
-
+  overflow-x: hidden;
 }
 .Aboutfront{
   position: absolute;
@@ -575,12 +576,17 @@ fill: #6e5494;
     margin-left:100px;
     margin-top: 160px;
   }
+  .Skillslogo{
+    height: 100%;
+    overflow-x: clip;
+    margin-left: 0;
+  }
   #Android{
     transform: rotate(10deg);
     width: 39vmin;
     min-width: 263px;
-    left: -50px;
-    top:-280px;
+    left: -120px;
+    top: -320px;
   }
   #Xcode{
 
@@ -593,43 +599,46 @@ fill: #6e5494;
     transform: rotate(10deg);
     width: 15vmax;
     min-width: 218px;
-    right: -20%;
+    right: -7%;
     margin-top: -21vmin;
   }
   #Unity{
     width: 18vmax;
     min-width: 265px;
-    right: -15%;
-    margin-top:42.5vh;
+    right: -10%;
+    margin-top: 42.5vh;
   }
   
   #Blender{
     transform: rotate(10deg);
     width: 39vmin;
     min-width: 263px;
-    right: -134px;
-    bottom:-651px;
+    right: -75px;
+    bottom: 12vh;   
   }
   #UX{
     transform: rotate(355deg);
     width: 22vmax;
     min-width: 261px;
-    left: -10%;
-    bottom:-5vmin;
+    left: -18%;
+    bottom: 40vh;
   }
   #PS{
     transform: rotate(5deg);
     width:15vmax;
     min-width: 218px;
-    right: -20%;
-    top:3vmin;
+    right: -13%;
+    top: 0;
   }
   #VS{
     transform: rotate(350deg);
     width: 18vmax;
     min-width: 265px;
-    left: -6%;
-    top:33.5vh;
+    left: -8%;
+    top: -35vh;
+  }
+  .Aboutback{
+    overflow-x: hidden;
   }
 
   .Aboutme{
@@ -762,62 +771,66 @@ fill: #6e5494;
     transform: rotate(10deg);
     width: 39vmin;
     min-width:239px;
-    left: -76px;
-    top:-280px;
+    left: -130px;
+    top: -220px;
   }
   #Xcode{
 
     width: 22vmax;
     min-width: 229px;
-    left: -15%;
-    margin-top: 21vmin;
+    left: -25%;
+    margin-top: 65vmin;
   }
   #Idle{
     transform: rotate(10deg);
     width: 15vmax;
     min-width: 196px;
-    right: -27%;
-    margin-top: -21vmin;
+    right: -20%;
+    margin-top: 0%;
   }
   #Unity{
 
     width: 18vmax;
     min-width: 242px;
-    right: -30%;
-    margin-top:43.5vh;
+    right: -34%;
+    margin-top: 49vh;
   }
   
   #Blender{
     transform: rotate(10deg);
     width: 39vmin;
     min-width: 263px;
-    right: -134px;
-    bottom:-651px;
+    right: -114px;
+    bottom: 15vh;
   }
   #UX{
     transform: rotate(355deg);
     width: 22vmax;
     min-width: 211px;
-    left: -10%;
-    bottom:5vmin;
+    left: -30%;
+    bottom: 40vh;
   }
   #PS{
     transform: rotate(5deg);
     width: 15vmax;
     min-width: 186px;
     right: -25%;
-    top:3vmin;
+    top: 5vh;
+
   }
   #VS{
     transform: rotate(350deg);
     width: 18vmax;
     min-width: 209px;
-    left: -6%;
-    top:33.5vh;
+    left: -20%;
+    top: -25.5vh;
   }
    /*Work Section*/
    .Work_Right{
     height: 320vh;
+   }
+   .Work_Left{
+    height: 360vh;
    }
   #AOS1{
     width: 88vmin;
@@ -885,37 +898,44 @@ fill: #6e5494;
 @media screen and (max-width: 320px) {
 
 
-  /*Work Section*/
+  /*About Section*/
+  .aboutmedesc{
+    font-size: 13px;
+  }
   #Blender {
     min-width: 263px;
     right: -130px;
-    bottom: -651px;
+    bottom: -10px;
   }
   #UX {
     min-width: 208px;
-    left: -20%;
-    bottom: 2vmin;
+    left: -35%;
+    bottom: 40vmin;
   }
   #PS {
     min-width: 186px;
-    right: -35%;
-    top: 3vmin;
+    right: -30%;
+    top: 20vmin;
   }
   #VS {
     min-width: 209px;
-    left: -15%;
-    top: 33.5vh;
+    left: -28%;
+    top: -25.5vh;
   }
   #Android {
-      left: -76px;
+      left: -130px;
+      top: -210px;
   }
   #Unity{
-    right: -35%;
+    right: -44%;
+    margin-top: 49vh;
   }
   #Idle {
-    right: -35%;
+    right: -30%;
+    margin-top: 0;
   }
   #Xcode {
-    left: -20%;
+    left: -35%;
+    margin-top: 45vmin;
   }
 }
