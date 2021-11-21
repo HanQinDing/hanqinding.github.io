@@ -114,7 +114,7 @@ fill: #6e5494;
   margin-top: 25vh;
 }
 .Hello p{
-  letter-spacing: -0.6vh;
+  letter-spacing: -0.6vmin;
   font-size: clamp(10vmin, 10vmin, 75px);
   /*12vw*/
   color: #313131;
