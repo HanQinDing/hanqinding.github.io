@@ -131,16 +131,23 @@ function WorkDescriptions(title,type,description,ImgID,extra){
 var currentProject;
 var Descriptionlist = [];
 var IMGList = [];
+var PList = [];
 var AOSList = [];
 var PFList = [];
 
 
 //const Preception = new WorkDescriptions("Perception","Personal Project","A unique First person persepctive puzzle game that requires players to think laterally to clear the game.","For this project, I tried to build/design everything by myself from scratch, including the sprites. This project is still currently in the making, playable demo will be shared soon");
-const PFostership = new WorkDescriptions("Project Fostership","<p style='color: #fd6264'> Ruby on Rails &nbsp;<p/> • <p style='color: #93C854'>&nbsp; Android Studio <p/>  ","An innovative solution to help foster relationships with groups of people who attend camp/events by breaking the ice.","Fostership","https://github.com/WetDumplings/Project_Fosterships");
-const AttackSlime = new WorkDescriptions("Attack on Slime"," <p style='color: #8CD248'>Gamemaker<p/>","A simple top-down bullet hell game that I built for my school project.","AOS","https://github.com/WetDumplings/Attack-on-Slimes");
+const PerspectiveG = new WorkDescriptions("Perspective","<p style='color: #808080'> Unity &nbsp;<p/> • <p style='color: #E87D0D'>&nbsp; Blender <p/> ","A First Person Persepective Optical Illusion Puzzle Game. My First Personal Project that I Code and Design everything from scratch.","Perspective","https://github.com/HanQinDing/PerspectiveGame");
+const PFostership = new WorkDescriptions("Project Fostership","<p style='color: #fd6264'> Ruby on Rails &nbsp;<p/> • <p style='color: #93C854'>&nbsp; Android Studio <p/>  ","An innovative solution to help foster relationships with groups of people who attend camp/events by breaking the ice.","Fostership","https://github.com/HanQinDing/Project_Fosterships");
+const AttackSlime = new WorkDescriptions("Attack on Slime"," <p style='color: #8CD248'>Gamemaker<p/>","A simple top-down bullet hell game that I built for my school project.","AOS","https://github.com/HanQinDing/Attack-on-Slimes");
+Descriptionlist.push(PerspectiveG);
 Descriptionlist.push(PFostership);
 Descriptionlist.push(AttackSlime);
 
+const P1 = new WorkImage("Perspective","P1","1.05",PList);
+const P2 = new WorkImage("Perspective","P2","0.63",PList);
+const P3 = new WorkImage("Perspective","P3","0.35",PList);
+const P4 = new WorkImage("Perspective","P4","0.17",PList);
 const AOS1 = new WorkImage("AOS","AOS1","1.05",AOSList);
 const AOS2 = new WorkImage("AOS","AOS2","0.63",AOSList);
 const AOS3 = new WorkImage("AOS","AOS3","0.35",AOSList);
@@ -149,11 +156,13 @@ const F1 = new WorkImage("Fostership","F1","0.25",PFList);
 const F2 = new WorkImage("Fostership","F2","0.55",PFList);
 const F3 = new WorkImage("Fostership","F3","0.65",PFList);
 const F5 = new WorkImage("Fostership","F5","0.15",PFList);
+IMGList.push(PList);
 IMGList.push(AOSList);
 IMGList.push(PFList);
 
 var Work_Description = document.getElementById("Work_Description");
 var Fostership = document.getElementById("Fostership");
+var Perspective = document.getElementById("Perspective");
 var AOS = document.getElementById("AOS");
 var ProjExtra = document.getElementById("ProjExtra").getElementsByTagName('p')[0];
 var ProjTitle = document.getElementById("ProjTitle").getElementsByTagName('p')[0];

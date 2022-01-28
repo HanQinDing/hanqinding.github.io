@@ -321,11 +321,11 @@ fill: #6e5494;
 
 
 .Work{
-  height: 400vh;
+  height: 560vh;
   margin-top: -10vh;
 }
 .Work_Right,.Work_Left{
-  height:400vh;
+  height:560vh;
   box-sizing: border-box;
   float: left;
   width: 45%;
@@ -348,13 +348,47 @@ fill: #6e5494;
   opacity: 0;
   top: 40px;
 }
-.AOS,.Fostership{
+.AOS,.Fostership,.Perspective{
   position: relative;
   height: 160vh;
 }
-.AOS img, .Fostership img{
+.AOS img, .Fostership img,.Perspective img{
   transition: transform 0.2s ease-out;  
 }
+
+#P1{
+  position: absolute;
+  width:75vmin;
+  height: auto;
+  z-index: 4;
+  top: 82%;
+  left: 3%;
+}
+#P2{
+  position: absolute;
+  width:65vmin;
+  height: auto;
+  z-index: 3;
+  top: 80%;
+  right:4% ;
+}
+#P3{
+  position: absolute;
+  width:60vmin;
+  height: auto;
+  z-index: 2;
+  top: 83%;
+  left: 10%;
+}
+#P4{
+  position: absolute;
+  width:50vmin;
+  height: auto;
+  top: 91%;
+  right: 8%;
+  z-index: 1;
+}
+
 
 #AOS1{
   position: absolute;
@@ -832,6 +866,27 @@ fill: #6e5494;
    .Work_Left{
     height: 360vh;
    }
+   #P1{
+    width: 88vmin;
+    left: 2%;
+    top: 82%;
+  }
+  #P2{
+    width: 74vmin;
+    right: 4%;
+    top: 75%;
+  }
+  #P3{
+    width: 65vmin;
+    left: 3%;
+    top: 75%;
+  }
+  #P4{
+    width: 50vmin;
+    right: 8%;
+    top: 80%;
+  }
+
   #AOS1{
     width: 88vmin;
     left: 2%;
