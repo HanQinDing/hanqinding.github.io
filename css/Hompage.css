@@ -180,6 +180,7 @@ fill: #6e5494;
 }
 .Skillslogo {  
   position: absolute;
+  transform: translate3d(0px,0px,0px);
   width: 100vw;
   margin-left: -10vw;
   animation-timing-function: ease-in-out;
@@ -193,6 +194,7 @@ fill: #6e5494;
   transition: opacity .5s ease-in-out;
 }
 .Skillslogo img{
+  transform: translate3d(0px,0px,0px);
   position: absolute;
   z-index: 1;
 }
@@ -202,6 +204,7 @@ fill: #6e5494;
   to   { transform: translate(0, -0px); }    
 }
 .SELogo, .DESLogo{
+  transform: translate3d(0px,0px,0px);
   width: 100%;
   height: 100%;
   position: absolute;
