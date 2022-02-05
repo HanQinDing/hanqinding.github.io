@@ -165,6 +165,7 @@ fill: #6e5494;
 
 
 .About{
+
   position: relative;
   margin-bottom: 8vh;
   margin-top: 20vmin;
@@ -275,7 +276,7 @@ fill: #6e5494;
 .AboutContainer{
   height: 100vh;
   width: auto;
-  /*position: sticky;*/
+  overflow-x: hidden;
   top: 30vh;
 }
 
