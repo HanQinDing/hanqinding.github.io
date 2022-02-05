@@ -8,9 +8,6 @@
   
 }
 
-html{
-  max-width: 100vw;
-}
 
 
 body{
@@ -278,9 +275,12 @@ fill: #6e5494;
 .AboutContainer{
   height: 100vh;
   width: auto;
-  position: sticky;
+  /*position: sticky;*/
   top: 30vh;
 }
+
+
+
 
 .Aboutback{
   position: absolute;
@@ -693,6 +693,8 @@ fill: #6e5494;
   .AboutContainer {
     top: 20vh;
   }
+
+
   .Aboutback{
     overflow-x: hidden;
   }
@@ -940,6 +942,8 @@ fill: #6e5494;
   .AboutContainer{
     top: 16vh;
   }
+
+
   .Aboutme {
     font-size: 95px;
     margin: 95px 0 0 -20vmax;
