@@ -9,13 +9,14 @@
 }
 
 
+html,body{
+  max-width: 100vw;
+}
+
 
 body{
   overflow-x: hidden;
   overflow-y: overlay;
-  transform: translate3d(0px,0px,0px);
-  width: 100%;
-  max-width: 100vw;
   margin: 0 !important;
   padding: 0 !important;
   position: relative;
@@ -167,7 +168,7 @@ fill: #6e5494;
 
 
 .About{
-
+  overflow: unset;
   position: relative;
   margin-bottom: 8vh;
   margin-top: 20vmin;
@@ -182,7 +183,6 @@ fill: #6e5494;
 }
 .Skillslogo {  
   position: absolute;
-  transform: translate3d(0px,0px,0px);
   width: 100vw;
   margin-left: -10vw;
   animation-timing-function: ease-in-out;
@@ -196,7 +196,6 @@ fill: #6e5494;
   transition: opacity .5s ease-in-out;
 }
 .Skillslogo img{
-  transform: translate3d(0px,0px,0px);
   position: absolute;
   z-index: 1;
 }
@@ -206,7 +205,6 @@ fill: #6e5494;
   to   { transform: translate(0, -0px); }    
 }
 .SELogo, .DESLogo{
-  transform: translate3d(0px,0px,0px);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -539,9 +537,11 @@ fill: #6e5494;
   transform: translateY(-10px);
   fill: #6e5494;
 }
-
-
-
+/*
+.Work,.Work_Description,.Work_Left,.Work_Right,.ProjTitle,.ProjType,.ProjDesc,.ProjExtra,.AOS,.Fostership,.Perspective{
+  overflow: unset;
+}
+*/
 .Contact{
   transition: opacity 0.6s ease-in-out;
   margin-right: 10vw;
