@@ -271,12 +271,12 @@ window.onscroll = function() {
   //SetAboutmeSectionScrollingAnimation 
 
   if(isInViewport(AboutSection)){
-    ScrollAnimation(AboutSection,Aboutme, 0.5 * (parseFloat(window.innerWidth)/1536),"x");
+    //ScrollAnimation(AboutSection,Aboutme, 0.5 * (parseFloat(window.innerWidth)/1536),"x");
     Sidedistance = parseFloat(window.innerHeight-AboutSection.getBoundingClientRect().top) * 0.5 * (parseFloat(window.innerWidth)/1536);
     SetAboutDescription();
   }
   else{
-    fixobjectPosition(AboutSection,Aboutme,0.6,"x");
+    //fixobjectPosition(AboutSection,Aboutme,0.6,"x");
     if(Sidedistance > 880)
         Sidedistance = 0;
     else

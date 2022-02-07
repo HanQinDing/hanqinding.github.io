@@ -234,21 +234,21 @@ fill: #6e5494;
   width: 17vmax;
   min-width: 200px;
   left: 10%;
-  margin-top: 47vmin;
+  top: 47vmin;
 }
 #Idle{
   transform: rotate(10deg);
   width: 15vmax;
   min-width: 200px;
   right: 8%;
-  margin-top: -21vmin;
+  top: -21vmin;
 }
 #Unity{
   transform: rotate(10deg);
   width: 18vmax;
   min-width: 240px;
   right: -5%;
-  margin-top:42.5vh;
+  top:42.5vh;
 }
 
 #Blender{
@@ -652,24 +652,23 @@ fill: #6e5494;
     top: -320px;
   }
   #Xcode{
-
     width:  22vmax;
     min-width: 261px;
     left: -10%;
-    margin-top: 21vmin;
+    top: 21vmin;
   }
   #Idle{
     transform: rotate(10deg);
     width: 15vmax;
     min-width: 218px;
     right: -7%;
-    margin-top: -21vmin;
+    top: -21vmin;
   }
   #Unity{
     width: 18vmax;
     min-width: 265px;
     right: -10%;
-    margin-top: 42.5vh;
+    top: 42.5vh;
   }
   
   #Blender{
@@ -979,21 +978,21 @@ fill: #6e5494;
     width: 22vmax;
     min-width: 229px;
     left: -25%;
-    margin-top: 65vmin;
+    top: 65vmin;
   }
   #Idle{
     transform: rotate(10deg);
     width: 15vmax;
     min-width: 196px;
     right: -20%;
-    margin-top: 0%;
+    top: 0%;
   }
   #Unity{
 
     width: 18vmax;
     min-width: 242px;
     right: -34%;
-    margin-top: 49vh;
+    top: 49vh;
   }
   
   #Blender{
@@ -1154,15 +1153,15 @@ fill: #6e5494;
   }
   #Unity{
     right: -44%;
-    margin-top: 49vh;
+    top: 49vh;
   }
   #Idle {
     right: -30%;
-    margin-top: 0;
+    top: 0;
   }
   #Xcode {
     left: -35%;
-    margin-top: 45vmin;
+    top: 45vmin;
   }
 
 .leftsection{
