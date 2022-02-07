@@ -283,7 +283,7 @@ fill: #6e5494;
   height: 100vh;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
   top: 30vh;
 }
 
