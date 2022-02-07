@@ -74,21 +74,21 @@ leftsection.addEventListener('transitionend', Settransition);
 var aboutmedesc = document.getElementById("aboutmedesc");
 var AboutSection = document.getElementById("About");
 var Aboutme = document.getElementById("Aboutme");
-//var SELogo = document.getElementById("SELogo");
-//var DESLogo = document.getElementById("DESLogo");
+var SELogo = document.getElementById("SELogo");
+var DESLogo = document.getElementById("DESLogo");
 var Designdescription = "I also enjoy drawing and sketching during my free time. I like to design my own project layouts and sprites. I always go for simple content structure, clean design and engaging  interaction";
 var SDdescription = "I enjoy building softwares from scratch and bringing my ideas to life on the internet. With a strong belief in Continuous improvement, I'm constantly pushing myself to learn new technologies like<span style='color: #93C854; font-weight:700;'> Android Studio</span>,<span style='color: #03B9ED; font-weight:700;'> Xcode </span> and <span style='color:#3A3A3A; font-weight:700;'> Unity</span>";
 aboutmedesc.innerHTML = SDdescription;
-//DESLogo.style.opacity = "0";
+DESLogo.style.opacity = "0";
 
 function SetAboutDescription(){
   if(aboutmedesc.getBoundingClientRect().top >= (0.45*window.innerHeight)){ 
     if(currentaboutme != "SD"){
-      //DESLogo.style.opacity = "0";
+      DESLogo.style.opacity = "0";
       aboutmedesc.style.opacity = "0";
       setTimeout(function(){
         aboutmedesc.innerHTML = SDdescription;
-        //SELogo.style.opacity = "1";
+        SELogo.style.opacity = "1";
         aboutmedesc.style.opacity = "1";
       },350);
       currentaboutme = "SD";
@@ -96,11 +96,11 @@ function SetAboutDescription(){
   }
   else{
     if(currentaboutme != "Des"){
-     // SELogo.style.opacity = "0";
+      SELogo.style.opacity = "0";
       aboutmedesc.style.opacity = "0";
       setTimeout(function(){
         aboutmedesc.innerHTML = Designdescription;
-        //DESLogo.style.opacity = "1";
+        DESLogo.style.opacity = "1";
         aboutmedesc.style.opacity = "1";
       },350);
       currentaboutme = "Des";
