@@ -220,7 +220,7 @@ fill: #6e5494;
 #Android,#Unity,#Idle,#Xcode,#Blender,#UX,#PS,#VS{
   height:auto; 
   opacity: 0.5;
-  overflow-x:hidden;
+  overflow-x:clip;
 }
 #Android{
   transform: rotate(10deg);
