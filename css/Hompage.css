@@ -174,7 +174,7 @@ fill: #6e5494;
   margin-top: 20vmin;
   height: 140vh;
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;
   opacity: 0;
   -webkit-transition: opacity .4s ease-in-out;
   -moz-transition: opacity .4s ease-in-out;
@@ -206,7 +206,7 @@ fill: #6e5494;
   to   { transform: translate(0, -0px); }    
 }
 .SELogo, .DESLogo{
-  max-width: 100% !important;
+  max-width: 100vw !important;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -283,7 +283,7 @@ fill: #6e5494;
   overflow-x: hidden;
   height: 100vh;
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;
   top: 30vh;
 }
 
