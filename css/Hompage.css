@@ -171,8 +171,8 @@ fill: #6e5494;
 .About{
   position: relative;
   margin-bottom: 8vh;
-  margin-top: 20vmin;
-  height: 140vh;
+  margin-top: 20vh;
+  height: 100vh;
   width: 100%;
   max-width: 100vw;
   opacity: 0;
@@ -240,14 +240,14 @@ fill: #6e5494;
   transform: rotate(10deg);
   width: 15vmax;
   min-width: 200px;
-  right: 8%;
+  left: 75%;
   top: -21vmin;
 }
 #Unity{
   transform: rotate(10deg);
   width: 18vmax;
   min-width: 240px;
-  right: -5%;
+  left: 82%;
   top:42.5vh;
 }
 
@@ -255,21 +255,21 @@ fill: #6e5494;
   transform: rotate(10deg);
   width: 256px;
   min-width: 220px;
-  right: 137px;
-  bottom:-430px;
+  left: 75%;
+  top:35vh;
 }
 #UX{
   transform: rotate(355deg);
   width: 237px;
   min-width: 200px;
   left: -50px;
-  bottom:-592px;
+  top:50vh;
 }
 #PS{
   transform: rotate(5deg);
   width:239px;
   min-width: 200px;
-  right: -60px;
+  left: 87%;
   top:-278px;
 }
 #VS{
@@ -660,13 +660,13 @@ fill: #6e5494;
     transform: rotate(10deg);
     width: 15vmax;
     min-width: 218px;
-    right: -7%;
+    left: 83%;
     top: -21vmin;
   }
   #Unity{
     width: 18vmax;
     min-width: 265px;
-    right: -10%;
+    left: 80%;
     top: 42.5vh;
   }
   
@@ -674,21 +674,21 @@ fill: #6e5494;
     transform: rotate(10deg);
     width: 39vmin;
     min-width: 263px;
-    right: -75px;
-    bottom: 12vh;   
+    left: 75%;
+    top: 50vh;  
   }
   #UX{
     transform: rotate(355deg);
     width: 22vmax;
     min-width: 261px;
     left: -18%;
-    bottom: 40vh;
+    top: 30vh;
   }
   #PS{
     transform: rotate(5deg);
     width:15vmax;
     min-width: 218px;
-    right: -13%;
+    left: 83%;
     top: 0;
   }
   #VS{
@@ -949,6 +949,10 @@ fill: #6e5494;
     padding: 1.5vmin 5vmin 1.5vmin 5vmin;
     font-size: clamp(12px,4vmin,16px);
   }
+  .About{
+    margin-top: 0;
+    height: 95vh;
+  }
   .AboutContainer{
     top: 16vh;
   }
@@ -983,14 +987,14 @@ fill: #6e5494;
     transform: rotate(10deg);
     width: 15vmax;
     min-width: 196px;
-    right: -20%;
+    left: 35vh;
     top: 0%;
   }
   #Unity{
 
     width: 18vmax;
     min-width: 242px;
-    right: -34%;
+    left: 35vh;
     top: 49vh;
   }
   
@@ -998,21 +1002,21 @@ fill: #6e5494;
     transform: rotate(10deg);
     width: 39vmin;
     min-width: 263px;
-    right: -114px;
-    bottom: 15vh;
+    left: 32vh;
+    top: 53vh;
   }
   #UX{
     transform: rotate(355deg);
     width: 22vmax;
     min-width: 211px;
     left: -30%;
-    bottom: 40vh;
+    top: 30vh;
   }
   #PS{
     transform: rotate(5deg);
     width: 15vmax;
     min-width: 186px;
-    right: -25%;
+    left:35vh;
     top: 5vh;
 
   }
@@ -1128,17 +1132,17 @@ fill: #6e5494;
   }
   #Blender {
     min-width: 263px;
-    right: -130px;
-    bottom: -10px;
+    left: 25vh;
+    top: 55vh;
   }
   #UX {
     min-width: 208px;
-    left: -35%;
-    bottom: 40vmin;
+    left: -20vh;
+    top: 30vh;
   }
   #PS {
     min-width: 186px;
-    right: -30%;
+    left: 33vh;
     top: 20vmin;
   }
   #VS {
@@ -1151,11 +1155,11 @@ fill: #6e5494;
       top: -210px;
   }
   #Unity{
-    right: -44%;
+    left: 30vh;
     top: 49vh;
   }
   #Idle {
-    right: -30%;
+    left: 30vh;
     top: 0;
   }
   #Xcode {
