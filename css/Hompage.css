@@ -16,7 +16,7 @@ html,body{
 
 
 body{
-  overflow-x: hidden;
+  overflow-x: clip;
   overflow-y: overlay;
   margin: 0 !important;
   padding: 0 !important;
@@ -306,7 +306,7 @@ fill: #6e5494;
   font-weight: 650;
   font-size: 21vmin;
   float: left;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 .Aboutfront{
   position: absolute;
@@ -705,7 +705,7 @@ fill: #6e5494;
 
 
   .Aboutback{
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   .Aboutme{
