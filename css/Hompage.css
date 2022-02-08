@@ -197,7 +197,7 @@ fill: #6e5494;
   transition: opacity .5s ease-in-out;
 }
 .Skillslogo img{
-  position: absolute;
+  
   z-index: 1;
 }
 @keyframes Skillslogo{
@@ -218,6 +218,7 @@ fill: #6e5494;
   transition: opacity .5s ease-in-out;
 }
 #Android,#Unity,#Idle,#Xcode,#Blender,#UX,#PS,#VS{
+  position: absolute;
   height:auto; 
   opacity: 0.5;
   overflow-x:clip;
