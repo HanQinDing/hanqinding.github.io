@@ -17,8 +17,7 @@ html,body{
 
 
 body{
-  touch-action: none;
--ms-touch-action: none;
+  background-color: white;
   overflow-x: hidden;
   overflow-y: overlay;
   margin: 0 !important;
@@ -661,26 +660,44 @@ fill: #6e5494;
     top: 21vmin;
   }
   #Idle{
-    transform: rotate(10deg);
-    width: 15vmax;
-    min-width: 218px;
-    left: 83%;
+    content: url(C:/Users/qindi/Documents/GitHub/hanqinding.github.io/img/HalfIdle.png);
+    transform: rotate(0);
+    width: 19vw;
+    min-width: 130px;
+    right: 0;
+    left:unset;
     top: -21vmin;
   }
   #Unity{
-    width: 18vmax;
-    min-width: 265px;
-    left: 80%;
+    content: url(C:/Users/qindi/Documents/GitHub/hanqinding.github.io/img/HalfUnity.png);
+    transform: rotate(0);
+    width: 19vw;
+    min-width: 130px;
+    right:0;
+    left:unset;
     top: 42.5vh;
   }
   
   #Blender{
-    transform: rotate(10deg);
-    width: 39vmin;
-    min-width: 263px;
-    left: 75%;
+    content: url(C:/Users/qindi/Documents/GitHub/hanqinding.github.io/img/HalfBlender.png);
+    transform: rotate(0);
+    width: 19vw;
+    min-width: 130px;
+    right:0;
+    left:unset;
     top: 50vh;  
   }
+
+  #PS{
+    content: url(C:/Users/qindi/Documents/GitHub/hanqinding.github.io/img/HalfPS.png);
+    transform: rotate(0);
+    width: 19vw;
+    min-width: 130px;
+    right:0;
+    left:unset;
+    top: 0;
+  }
+
   #UX{
     transform: rotate(355deg);
     width: 22vmax;
@@ -688,13 +705,7 @@ fill: #6e5494;
     left: -18%;
     top: 30vh;
   }
-  #PS{
-    transform: rotate(5deg);
-    width:15vmax;
-    min-width: 218px;
-    left: 83%;
-    top: 0;
-  }
+
   #VS{
     transform: rotate(350deg);
     width: 18vmax;
@@ -988,25 +999,13 @@ fill: #6e5494;
     top: 65vmin;
   }
   #Idle{
-    transform: rotate(10deg);
-    width: 15vmax;
-    min-width: 196px;
-    left: 35vh;
     top: 0%;
   }
   #Unity{
-
-    width: 18vmax;
-    min-width: 242px;
-    left: 35vh;
     top: 49vh;
   }
   
   #Blender{
-    transform: rotate(10deg);
-    width: 39vmin;
-    min-width: 263px;
-    left: 32vh;
     top: 53vh;
   }
   #UX{
@@ -1017,10 +1016,7 @@ fill: #6e5494;
     top: 30vh;
   }
   #PS{
-    transform: rotate(5deg);
-    width: 15vmax;
-    min-width: 186px;
-    left:35vh;
+    min-width: 110px;
     top: 5vh;
 
   }
@@ -1135,8 +1131,7 @@ fill: #6e5494;
     font-size: 5vw;
   }
   #Blender {
-    min-width: 263px;
-    left: 25vh;
+    
     top: 55vh;
   }
   #UX {
@@ -1145,8 +1140,7 @@ fill: #6e5494;
     top: 30vh;
   }
   #PS {
-    min-width: 186px;
-    left: 33vh;
+    min-width: 110px;
     top: 20vmin;
   }
   #VS {
@@ -1159,11 +1153,11 @@ fill: #6e5494;
       top: -210px;
   }
   #Unity{
-    left: 30vh;
+    min-width: 110px;
     top: 49vh;
   }
   #Idle {
-    left: 30vh;
+    min-width: 110px;
     top: 0;
   }
   #Xcode {

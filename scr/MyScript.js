@@ -137,7 +137,7 @@ var PFList = [];
 
 
 //const Preception = new WorkDescriptions("Perception","Personal Project","A unique First person persepctive puzzle game that requires players to think laterally to clear the game.","For this project, I tried to build/design everything by myself from scratch, including the sprites. This project is still currently in the making, playable demo will be shared soon");
-const PerspectiveG = new WorkDescriptions("Perspectives","<p style='color: #808080'> Unity <p/>&nbsp; • &nbsp;<p style='color: #E87D0D'> Blender <p/>  ","A First Person Persepective Optical Illusion Puzzle Game. My First Personal Project that I Code and Design everything from scratch.","Perspective","https://github.com/HanQinDing/PerspectiveGame");
+const PerspectiveG = new WorkDescriptions("Perspectives","<p style='color: #808080'> Unity <p/>&nbsp; • &nbsp;<p style='color: #E87D0D'> Blender <p/>  ","A First Person Perspective Optical Illusion Puzzle Game. My First Personal Project that I Code and Design everything from scratch.","Perspective","https://github.com/HanQinDing/PerspectiveGame");
 const PFostership = new WorkDescriptions("Project Fostership","<p style='color: #93C854'>Android Studio<p/>&nbsp; • &nbsp;<p style='color: #fd6264'>Ruby on Rails<p/> ","An innovative solution to help foster relationships with groups of people who attend camp/events by breaking the ice.","Fostership","https://github.com/HanQinDing/Project_Fosterships");
 const AttackSlime = new WorkDescriptions("Attack on Slime","<p style='color: #8CD248'>Gamemaker<p/>","A simple top-down bullet hell game that I built for my school project.","AOS","https://github.com/HanQinDing/Attack-on-Slimes");
 Descriptionlist.push(PerspectiveG);
@@ -265,7 +265,6 @@ window.onscroll = function() {
     if(getComputedStyle(AboutSection).opacity == "0")
       setTimeout(function(){AboutSection.style.opacity = "1"},1);
     }
-
 
 
   //SetAboutmeSectionScrollingAnimation 
