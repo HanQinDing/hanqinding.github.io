@@ -233,12 +233,13 @@ fill: #6e5494;
 }
 #Xcode{
   transform: rotate(350deg);
-  width: 17vmax;
+  width: 17vmax;  
   min-width: 200px;
   left: 10%;
   top: 47vmin;
 }
 #Idle{
+  content: url(../img/idleicon.png);
   transform: rotate(10deg);
   width: 15vmax;
   min-width: 200px;
@@ -246,6 +247,7 @@ fill: #6e5494;
   top: -21vmin;
 }
 #Unity{
+  content: url(../img/unityicon.png);
   transform: rotate(10deg);
   width: 18vmax;
   min-width: 240px;
@@ -254,6 +256,7 @@ fill: #6e5494;
 }
 
 #Blender{
+  content: url(../img/blenderIcon.png);
   transform: rotate(10deg);
   width: 256px;
   min-width: 220px;
@@ -268,6 +271,7 @@ fill: #6e5494;
   top:50vh;
 }
 #PS{
+  content: url(../img/PhotoshopIcon2.png);
   transform: rotate(5deg);
   width:239px;
   min-width: 200px;
@@ -660,7 +664,7 @@ fill: #6e5494;
     top: 21vmin;
   }
   #Idle{
-    content: url(C:/Users/qindi/Documents/GitHub/hanqinding.github.io/img/HalfIdle.png);
+    content: url(../img/HalfIdle.png);
     transform: rotate(0);
     width: 19vw;
     min-width: 130px;
@@ -669,7 +673,7 @@ fill: #6e5494;
     top: -21vmin;
   }
   #Unity{
-    content: url(C:/Users/qindi/Documents/GitHub/hanqinding.github.io/img/HalfUnity.png);
+    content: url(../img/HalfUnity.png);
     transform: rotate(0);
     width: 19vw;
     min-width: 130px;
@@ -679,7 +683,7 @@ fill: #6e5494;
   }
   
   #Blender{
-    content: url(C:/Users/qindi/Documents/GitHub/hanqinding.github.io/img/HalfBlender.png);
+    content: url(../img/HalfBlender.png);
     transform: rotate(0);
     width: 19vw;
     min-width: 130px;
@@ -689,7 +693,7 @@ fill: #6e5494;
   }
 
   #PS{
-    content: url(C:/Users/qindi/Documents/GitHub/hanqinding.github.io/img/HalfPS.png);
+    content: url(../img/HalfPS.png);
     transform: rotate(0);
     width: 19vw;
     min-width: 130px;
