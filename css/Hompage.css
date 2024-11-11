@@ -218,73 +218,55 @@ fill: #6e5494;
   -o-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
 }
-#Android,#Unity,#Idle,#Xcode,#Blender,#UX,#PS,#VS{
-  overflow-x: hidden;
+#Andorid,#CI,#CS,#CPP,#Blender,#PS,#UX{
+ overflow-x: hidden;
   position: absolute;
   height:auto; 
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
-#Android{
+#CI{
+  transform: rotate(10deg);
+  width: 10%;
+  min-width: 50px;
+  top: 15vmin;
+  left: 84vmax;
+}
+#CS{
   transform: rotate(10deg);
   width: 19vmax;
   min-width: 220px;
   left: -100px;
-  top:-280px;
+  top:-400px;
 }
-#Xcode{
+#CPP{
   transform: rotate(350deg);
   width: 17vmax;  
   min-width: 200px;
   left: 10%;
   top: 47vmin;
 }
-#Idle{
-  content: url(../img/idleicon.png);
-  transform: rotate(10deg);
-  width: 15vmax;
-  min-width: 200px;
-  left: 75%;
-  top: -21vmin;
-}
-#Unity{
-  content: url(../img/unityicon.png);
-  transform: rotate(10deg);
-  width: 18vmax;
-  min-width: 240px;
-  left: 82%;
-  top:42.5vh;
-}
-
 #Blender{
-  content: url(../img/blenderIcon.png);
   transform: rotate(10deg);
-  width: 256px;
-  min-width: 220px;
-  left: 75%;
-  top:35vh;
-}
-#UX{
-  transform: rotate(355deg);
-  width: 237px;
-  min-width: 200px;
-  left: -50px;
-  top:50vh;
+  width: 10%;
+  min-width: 50px;
+  top: 15vmin;
+  left: 84vmax;
 }
 #PS{
-  content: url(../img/PhotoshopIcon2.png);
-  transform: rotate(5deg);
-  width:239px;
-  min-width: 200px;
-  left: 87%;
-  top:-278px;
+  transform: rotate(10deg);
+  width: 19vmax;
+  min-width: 220px;
+  left: -100px;
+  top:-400px;
 }
-#VS{
+#UX{
   transform: rotate(350deg);
-  width: 219px;
-  min-width: 246px;
+  width: 17vmax;  
+  min-width: 200px;
   left: 10%;
-  top: -350px;
+  top: 47vmin;
 }
+
 .AboutContainer{
   overflow-x: hidden;
   height: 100vh;
@@ -311,24 +293,24 @@ fill: #6e5494;
   margin:0 0 0 -20vmax;
   font-weight: 650;
   font-size: 21vmin;
-  float: left;
+  float: center;
   overflow-x: hidden;
 }
 .Aboutfront{
   position: absolute;
   margin-top: 14vmin;
-  margin-left: 8vw;
+  margin-left: 10vw;
   float: left;
   z-index: 3;
   width: 65%;
 }
 .aboutmedesc{
   font-family: 'Nunito', sans-serif;
-  letter-spacing: 0.05vmin;
+  /* letter-spacing: 0.05vmin; */
   color: #313131;
   font-size: 2.6vmin;
-  line-height: 4.5vmin;
-  font-weight: 450;
+  line-height: 4vmin;
+  font-weight: 700;
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -ms-transition: opacity .5s ease-in-out;
@@ -368,11 +350,11 @@ fill: #6e5494;
   opacity: 0;
   top: 40px;
 }
-.AOS,.Fostership,.Perspective{
+.Goop,.Fostership,.Perspective{
   position: relative;
   height: 160vh;
 }
-.AOS img, .Fostership img,.Perspective img{
+.Goop img, .Fostership img,.Perspective img{
   transition: transform 0.2s ease-out;  
 }
 
@@ -414,7 +396,7 @@ fill: #6e5494;
 }
 
 
-#AOS1{
+#Goop1{
   position: absolute;
   width: 77%;
   min-width: 380px;
@@ -423,7 +405,7 @@ fill: #6e5494;
   top: 82%;
   left: 3%;
 }
-#AOS2{
+#Goop2{
   position: absolute;
   width: 65%;
   min-width: 320px;
@@ -432,7 +414,7 @@ fill: #6e5494;
   top: 80%;
   right:4% ;
 }
-#AOS3{
+#Goop3{
   position: absolute;
   width: 60%;
   min-width: 296px;
@@ -441,7 +423,7 @@ fill: #6e5494;
   top: 83%;
   left: 10%;
 }
-#AOS4{
+#Goop4{
   position: absolute;
   width: 50%;
   min-width: 246.7px;
@@ -549,7 +531,7 @@ fill: #6e5494;
   fill: #6e5494;
 }
 /*
-.Work,.Work_Description,.Work_Left,.Work_Right,.ProjTitle,.ProjType,.ProjDesc,.ProjExtra,.AOS,.Fostership,.Perspective{
+.Work,.Work_Description,.Work_Left,.Work_Right,.ProjTitle,.ProjType,.ProjDesc,.ProjExtra,.Goop,.Fostership,.Perspective{
   overflow: unset;
 }
 */
@@ -764,7 +746,7 @@ fill: #6e5494;
     width: 100%;
     height: 100%;
   }
-  .AOS, .Fostership, .Perspective {
+  .Goop, .Fostership, .Perspective {
     height: 140vh;
   }
   
@@ -806,7 +788,7 @@ fill: #6e5494;
 }
 
 
-#AOS1{
+#Goop1{
   position: absolute;
   width:75vmin;
   min-width: unset;
@@ -815,7 +797,7 @@ fill: #6e5494;
   top: 82%;
   left: 3%;
 }
-#AOS2{
+#Goop2{
   position: absolute;
   width:65vmin;
   min-width: unset;
@@ -824,7 +806,7 @@ fill: #6e5494;
   top: 80%;
   right:4% ;
 }
-#AOS3{
+#Goop3{
   position: absolute;
   width:60vmin;
   min-width: unset;
@@ -833,7 +815,7 @@ fill: #6e5494;
   top: 83%;
   left: 10%;
 }
-#AOS4{
+#Goop4{
   position: absolute;
   width:50vmin;
   min-width: unset;
@@ -1039,7 +1021,7 @@ fill: #6e5494;
     height: 100%;
    }
 
-  .AOS, .Fostership, .Perspective {
+  .Goop, .Fostership, .Perspective {
     height: 145vh;
   }
    #P1{
@@ -1063,22 +1045,22 @@ fill: #6e5494;
     top: 80%;
   }
 
-  #AOS1{
+  #Goop1{
     width: 88vmin;
     left: 2%;
     top: 82%;
   }
-  #AOS2{
+  #Goop2{
     width: 74vmin;
     right: 4%;
     top: 75%;
   }
-  #AOS3{
+  #Goop3{
     width: 65vmin;
     left: 3%;
     top: 75%;
   }
-  #AOS4{
+  #Goop4{
     width: 50vmin;
     right: 8%;
     top: 80%;

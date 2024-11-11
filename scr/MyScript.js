@@ -77,7 +77,7 @@ var Aboutme = document.getElementById("Aboutme");
 var SELogo = document.getElementById("SELogo");
 var DESLogo = document.getElementById("DESLogo");
 var Designdescription = "I also enjoy drawing and sketching during my free time. I like to design my own project layouts and sprites. I always go for simple content structure, clean design and engaging  interaction";
-var SDdescription = "I enjoy building softwares from scratch and bringing my ideas to life on the internet. With a strong belief in Continuous improvement, I'm constantly pushing myself to learn new technologies like<span style='color: #93C854; font-weight:700;'> Android Studio</span>,<span style='color: #03B9ED; font-weight:700;'> Xcode </span> and <span style='color:#3A3A3A; font-weight:700;'> Unity</span>";
+var SDdescription = "I enjoy building softwares from scratch and bringing my ideas to life on the internet. With a strong belief in Continuous improvement, I'm constantly pushing myself to learn new technologies like<span style='color: #93C854; font-weight:1000;'> Android Studio</span>,<span style='color: #03B9ED; font-weight:1000;'> Xcode </span> and <span style='color:#000000; font-weight:1000;'> Unity</span>";
 aboutmedesc.innerHTML = SDdescription;
 DESLogo.style.opacity = "0";
 
@@ -132,39 +132,42 @@ var currentProject;
 var Descriptionlist = [];
 var IMGList = [];
 var PList = [];
-var AOSList = [];
+var GoopList = [];
 var PFList = [];
 
 
 //const Preception = new WorkDescriptions("Perception","Personal Project","A unique First person persepctive puzzle game that requires players to think laterally to clear the game.","For this project, I tried to build/design everything by myself from scratch, including the sprites. This project is still currently in the making, playable demo will be shared soon");
-const PerspectiveG = new WorkDescriptions("Perspectives","<p style='color: #808080'> Unity <p/>&nbsp; • &nbsp;<p style='color: #E87D0D'> Blender <p/>  ","A First Person Perspective Optical Illusion Puzzle Game. My First Personal Project that I Code and Design everything from scratch.","Perspective","https://github.com/HanQinDing/PerspectiveGame");
-const PFostership = new WorkDescriptions("Project Fostership","<p style='color: #93C854'>Android Studio<p/>&nbsp; • &nbsp;<p style='color: #fd6264'>Ruby on Rails<p/> ","An innovative solution to help foster relationships with groups of people who attend camp/events by breaking the ice.","Fostership","https://github.com/HanQinDing/Project_Fosterships");
-const AttackSlime = new WorkDescriptions("Attack on Slime","<p style='color: #8CD248'>Gamemaker<p/>","A simple top-down bullet hell game that I built for my school project.","AOS","https://github.com/HanQinDing/Attack-on-Slimes");
+const GoopEngine = new WorkDescriptions("Goop Engine / Dungeon Plunderer ","<img src='/img/CPPIcon.png' height='65'style='margin: 20px 20px 0px 0px;'><img src='/img/CSIcon.png' height='65'>","<br>A custom 2D game engine made for school group project. <br> Used the engine to create a 2D rouge-like card game.","Goop","https://github.com/AlonzoNalpon/Goop");
+const PerspectiveG = new WorkDescriptions("Perspectives","<img src='/img/unityicon.png' height='65'style='margin: 20px 20px 0px 0px;'><img src='/img/blenderIcon.png' height='65'>","<br>A First Person Perspective Optical Illusion Puzzle Game. Solo game project, full gameplay not yet implemented.","Perspective","https://github.com/HanQinDing/PerspectiveGame");
+const PFostership = new WorkDescriptions("Project Fostership","<img src='/img/androidstudioicon.png' height='65'style='margin: 20px 20px 0px 0px;'><img src='/img/RR.png' height='65'>","<br>An innovative solution to help foster relationships with groups of people who attend camp/events by breaking the ice.","Fostership","https://github.com/HanQinDing/Project_Fosterships");
+
+Descriptionlist.push(GoopEngine);
 Descriptionlist.push(PerspectiveG);
-Descriptionlist.push(AttackSlime);
 Descriptionlist.push(PFostership);
 
+
+const Goop1 = new WorkImage("Goop","Goop1","1.05",GoopList);
+const Goop2 = new WorkImage("Goop","Goop2","0.63",GoopList);
+const Goop3 = new WorkImage("Goop","Goop3","0.35",GoopList);
+const Goop4 = new WorkImage("Goop","Goop4","0.17",GoopList);
 
 const P1 = new WorkImage("Perspective","P1","1.05",PList);
 const P2 = new WorkImage("Perspective","P2","0.63",PList);
 const P3 = new WorkImage("Perspective","P3","0.35",PList);
 const P4 = new WorkImage("Perspective","P4","0.17",PList);
-const AOS1 = new WorkImage("AOS","AOS1","1.05",AOSList);
-const AOS2 = new WorkImage("AOS","AOS2","0.63",AOSList);
-const AOS3 = new WorkImage("AOS","AOS3","0.35",AOSList);
-const AOS4 = new WorkImage("AOS","AOS4","0.17",AOSList);
+
 const F1 = new WorkImage("Fostership","F1","0.25",PFList);
 const F2 = new WorkImage("Fostership","F2","0.55",PFList);
 const F3 = new WorkImage("Fostership","F3","0.65",PFList);
 const F5 = new WorkImage("Fostership","F5","0.15",PFList);
+IMGList.push(GoopList);
 IMGList.push(PList);
-IMGList.push(AOSList);
 IMGList.push(PFList);
 
 var Work_Description = document.getElementById("Work_Description");
 var Fostership = document.getElementById("Fostership");
 var Perspective = document.getElementById("Perspective");
-var AOS = document.getElementById("AOS");
+var Goop = document.getElementById("Goop");
 var ProjExtra = document.getElementById("ProjExtra").getElementsByTagName('p')[0];
 var ProjTitle = document.getElementById("ProjTitle").getElementsByTagName('p')[0];
 var ProjType = document.getElementById("ProjType");
@@ -270,16 +273,16 @@ window.onscroll = function() {
   //SetAboutmeSectionScrollingAnimation 
 
   if(isInViewport(AboutSection)){
-    ScrollAnimation(AboutSection,Aboutme, 0.5 * (parseFloat(window.innerWidth)/1536),"x");
-    Sidedistance = parseFloat(window.innerHeight-AboutSection.getBoundingClientRect().top) * 0.5 * (parseFloat(window.innerWidth)/1536);
+    // ScrollAnimation(AboutSection,Aboutme, 0.5 * (parseFloat(window.innerWidth)/1536),"x");
+    // Sidedistance = parseFloat(window.innerHeight-AboutSection.getBoundingClientRect().top) * 0.5 * (parseFloat(window.innerWidth)/1536);
     SetAboutDescription();
   }
   else{
-    fixobjectPosition(AboutSection,Aboutme,0.6,"x");
-    if(Sidedistance > 880)
-        Sidedistance = 0;
-    else
-      Sidedistance = 1056;
+    // fixobjectPosition(AboutSection,Aboutme,0.6,"x");
+    // if(Sidedistance > 880)
+    //     Sidedistance = 0;
+    // else
+    //   Sidedistance = 1056;
   }
 
 
