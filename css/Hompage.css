@@ -632,72 +632,50 @@ fill: #6e5494;
     height: 100%;
     margin-left: 0;
   }
-  #Android{
+  #CI{
     transform: rotate(10deg);
-    width: 39vmin;
-    min-width: 263px;
-    left: -120px;
-    top: -320px;
+      width: 39vmin;
+      min-width: 263px;
+      left: -120px;
+      top: -320px;
   }
-  #Xcode{
-    width:  22vmax;
-    min-width: 261px;
-    left: -10%;
-    top: 21vmin;
+  #CS{
+    transform: rotate(10deg);
+      width:  22vmax;
+      min-width: 261px;
+      left: -10%;
+      top: 21vmin;
   }
-  #Idle{
-    content: url(../img/HalfIdle.png);
-    transform: rotate(0);
-    width: 19vw;
-    min-width: 130px;
-    right: 0;
-    left:unset;
-    top: -21vmin;
-  }
-  #Unity{
-    content: url(../img/HalfUnity.png);
-    transform: rotate(0);
-    width: 19vw;
-    min-width: 130px;
-    right:0;
-    left:unset;
-    top: 42.5vh;
-  }
-  
-  #Blender{
-    content: url(../img/HalfBlender.png);
-    transform: rotate(0);
-    width: 19vw;
-    min-width: 130px;
-    right:0;
-    left:unset;
-    top: 50vh;  
-  }
-
-  #PS{
-    content: url(../img/HalfPS.png);
-    transform: rotate(0);
-    width: 19vw;
-    min-width: 130px;
-    right:0;
-    left:unset;
-    top: 0;
-  }
-
-  #UX{
-    transform: rotate(355deg);
-    width: 22vmax;
-    min-width: 261px;
-    left: -18%;
-    top: 30vh;
-  }
-
-  #VS{
+  #CPP{
     transform: rotate(350deg);
-    width: 18vmax;
-    min-width: 265px;
-    left: -8%;
-    top: -35vh;
+      width: 19vw;
+      min-width: 130px;
+      right: 0;
+      left:unset;
+      top: -21vmin;
+  }
+  #Blender{
+    transform: rotate(10deg);
+      width: 19vw;
+      min-width: 130px;
+      right:0;
+      left:unset;
+      top: 50vh; 
+  }
+  #PS{
+  transform: rotate(0);
+      width: 19vw;
+      min-width: 130px;
+      right:0;
+      left:unset;
+      top: 0;
+  }
+  #UX{
+      transform: rotate(355deg);
+      width: 22vmax;
+      min-width: 261px;
+      left: -18%;
+      top: 30vh;
   }
   .AboutContainer {
     top: 20vh;
@@ -750,80 +728,82 @@ fill: #6e5494;
     height: 140vh;
   }
   
-#P1{
-  position: absolute;
-  width:75vmin;
-  min-width: unset;
-  height: auto;
-  z-index: 4;
-  top: 82%;
-  left: 3%;
-}
-#P2{
-  position: absolute;
-  width:65vmin;
-  min-width: unset;
-  height: auto;
-  z-index: 3;
-  top: 80%;
-  right:4% ;
-}
-#P3{
-  position: absolute;
-  width:60vmin;
-  min-width: unset;
-  height: auto;
-  z-index: 2;
-  top: 83%;
-  left: 10%;
-}
-#P4{
-  position: absolute;
-  width:50vmin;
-  min-width: unset;
-  height: auto;
-  top: 91%;
-  right: 8%;
-  z-index: 1;
-}
-
-
-#Goop1{
-  position: absolute;
-  width:75vmin;
-  min-width: unset;
-  height: auto;
-  z-index: 4;
-  top: 82%;
-  left: 3%;
-}
-#Goop2{
-  position: absolute;
-  width:65vmin;
-  min-width: unset;
-  height: auto;
-  z-index: 3;
-  top: 80%;
-  right:4% ;
-}
-#Goop3{
-  position: absolute;
-  width:60vmin;
-  min-width: unset;
-  height: auto;
-  z-index: 2;
-  top: 83%;
-  left: 10%;
-}
-#Goop4{
-  position: absolute;
-  width:50vmin;
-  min-width: unset;
-  height: auto;
-  top: 91%;
-  right: 8%;
-  z-index: 1;
-}
+  #P1{
+    position: absolute;
+    width:75vmin;
+    min-width: unset;
+    height: auto;
+    z-index: 4;
+    top: 82%;
+    left: 3%;
+  }
+  #Goop1{
+    position: absolute;
+    width:75vmin;
+    min-width: unset;
+    height: auto;
+    z-index: 4;
+    top: 82%;
+    left: 3%;
+  }
+  
+  #P2{
+    position: absolute;
+    width:65vmin;
+    min-width: unset;
+    height: auto;
+    z-index: 3;
+    top: 80%;
+    right:4% ;
+  }
+  #Goop2{
+    position: absolute;
+    width:65vmin;
+    min-width: unset;
+    height: auto;
+    z-index: 3;
+    top: 80%;
+    right:4% ;
+  }
+  
+  #P3{
+    position: absolute;
+    width:60vmin;
+    min-width: unset;
+    height: auto;
+    z-index: 2;
+    top: 83%;
+    left: 10%;
+  }
+  #Goop3{
+    position: absolute;
+    width:60vmin;
+    min-width: unset;
+    height: auto;
+    z-index: 2;
+    top: 83%;
+    left: 10%;
+  }
+  
+  #P4{
+    position: absolute;
+    width:50vmin;
+    min-width: unset;
+    height: auto;
+    top: 91%;
+    right: 8%;
+    z-index: 1;
+  }
+  #Goop4{
+    position: absolute;
+    width:50vmin;
+    min-width: unset;
+    height: auto;
+    top: 91%;
+    right: 8%;
+    z-index: 1;
+  }
+  
 
 #F1{
   position: absolute;
@@ -970,48 +950,35 @@ fill: #6e5494;
     width: 80%;
     line-height: 29px;
   }
-  #Android{
+  #CI{
     transform: rotate(10deg);
     width: 39vmin;
-    min-width:239px;
-    left: -130px;
-    top: -220px;
+      min-width:239px;
+      left: -130px;
+      top: -220px;
   }
-  #Xcode{
-
+  #CS{
     width: 22vmax;
-    min-width: 229px;
-    left: -25%;
-    top: 65vmin;
+      min-width: 229px;
+      left: -25%;
+      top: 65vmin;
   }
-  #Idle{
-    top: 0%;
+  #CPP{
+   top: 0%;
   }
-  #Unity{
-    top: 49vh;
-  }
-  
   #Blender{
-    top: 53vh;
-  }
-  #UX{
-    transform: rotate(355deg);
-    width: 22vmax;
-    min-width: 211px;
-    left: -30%;
-    top: 30vh;
+     top: 53vh;
   }
   #PS{
-    min-width: 110px;
-    top: 5vh;
-
+  min-width: 110px;
+      top: 5vh;
   }
-  #VS{
-    transform: rotate(350deg);
-    width: 18vmax;
-    min-width: 209px;
-    left: -20%;
-    top: -25.5vh;
+  #UX{
+      transform: rotate(355deg);
+      width: 22vmax;
+      min-width: 211px;
+      left: -30%;
+      top: 30vh;
   }
    /*Work Section*/
    .Work_Right{
@@ -1024,47 +991,50 @@ fill: #6e5494;
   .Goop, .Fostership, .Perspective {
     height: 145vh;
   }
-   #P1{
+  #P1{
     width: 88vmin;
     left: 2%;
     top: 82%;
-  }
-  #P2{
-    width: 74vmin;
-    right: 4%;
-    top: 75%;
-  }
-  #P3{
-    width: 65vmin;
-    left: 3%;
-    top: 75%;
-  }
-  #P4{
-    width: 50vmin;
-    right: 8%;
-    top: 80%;
-  }
+}
+#Goop1{
+    width: 88vmin;
+    left: 2%;
+    top: 82%;
+}
 
-  #Goop1{
-    width: 88vmin;
-    left: 2%;
-    top: 82%;
-  }
-  #Goop2{
+#P2{
     width: 74vmin;
     right: 4%;
     top: 75%;
-  }
-  #Goop3{
+}
+#Goop2{
+    width: 74vmin;
+    right: 4%;
+    top: 75%;
+}
+
+#P3{
     width: 65vmin;
     left: 3%;
     top: 75%;
-  }
-  #Goop4{
+}
+#Goop3{
+    width: 65vmin;
+    left: 3%;
+    top: 75%;
+}
+
+#P4{
     width: 50vmin;
     right: 8%;
     top: 80%;
-  }
+}
+#Goop4{
+    width: 50vmin;
+    right: 8%;
+    top: 80%;
+}
+
   #F1{
     width: 38vmin;
     left: 10%;
@@ -1116,40 +1086,31 @@ fill: #6e5494;
   .aboutmedesc{
     font-size: 5vw;
   }
-  #Blender {
-    
-    top: 55vh;
-  }
-  #UX {
-    min-width: 208px;
-    left: -20vh;
-    top: 30vh;
-  }
-  #PS {
+  #CI{
+    left: -130px;
+         top: -210px;
+   }
+   #CS{
+       min-width: 110px;
+       top: 49vh;
+   }
+   #CPP{
+   min-width: 110px;
+       top: 0;
+   }
+   #Blender{
+      top: 53vh;
+   }
+   #PS{
     min-width: 110px;
-    top: 20vmin;
-  }
-  #VS {
-    min-width: 209px;
-    left: -28%;
-    top: -25.5vh;
-  }
-  #Android {
-      left: -130px;
-      top: -210px;
-  }
-  #Unity{
-    min-width: 110px;
-    top: 49vh;
-  }
-  #Idle {
-    min-width: 110px;
-    top: 0;
-  }
-  #Xcode {
-    left: -35%;
-    top: 45vmin;
-  }
+       top: 20vmin;
+   }
+   #UX{
+       min-width: 208px;
+       left: -20vh;
+       top: 30vh;
+   }
+   
 
 .leftsection{
   width: 90%;
